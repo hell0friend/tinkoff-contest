@@ -21,6 +21,8 @@ public final class TCSButton: UIButton {
         setBackgroundColor(color: UIColor(red: 0, green: 0.063, blue: 0.141, alpha: 0.03), forState: .normal)
         setBackgroundColor(color: UIColor(red: 0, green: 0.063, blue: 0.141, alpha: 0.06), forState: .highlighted)
 
+        titleLabel?.font = .systemFont(ofSize: 15, weight: .regular)
+
         if let height = height {
             translatesAutoresizingMaskIntoConstraints = false
             heightAnchor.constraint(equalToConstant: height).isActive = true

@@ -8,6 +8,27 @@
 import UIKit
 
 extension VerticalItemContainerView {
-    
-    public struct ViewModel {}
+
+    public struct ViewModel {
+
+        let title: String
+        let buttonTitle: String
+        let buttonAction: () -> Void
+        let items: [VerticalItemView.ViewModel]
+        let backgroundStyle: BackgroundStyle
+
+        public init(
+            title: String,
+            buttonTitle: String,
+            backgroundStyle: BackgroundStyle,
+            buttonAction: @escaping () -> Void,
+            items: [VerticalItemView.ViewModel]
+        ) {
+            self.title = title
+            self.buttonTitle = buttonTitle
+            self.buttonAction = buttonAction
+            self.items = items
+            self.backgroundStyle = backgroundStyle
+        }
+    }
 }

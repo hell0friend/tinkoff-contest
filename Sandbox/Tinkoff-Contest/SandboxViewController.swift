@@ -55,6 +55,8 @@ final class SandboxViewController: UIViewController {
         stackView.addArrangedSubview(makeLeftIconHeaderViewWithoutButton(colorStyle: .white))
         stackView.addArrangedSubview(makeLeftIconHeaderViewWithoutButton(colorStyle: .grey))
         stackView.addArrangedSubview(makeLeftIconHeaderViewWithButton())
+        stackView.addArrangedSubview(makeVerticalItemContainerViewWithoutButton(backgroundStyle: .white))
+        stackView.addArrangedSubview(makeVerticalItemContainerViewWithoutButton(backgroundStyle: .grey))
     }
 
     private func makeHeaderWithTitleDescription(colorStyle: BackgroundStyle) -> UIView {
@@ -138,6 +140,39 @@ final class SandboxViewController: UIViewController {
         )
 
         return header
+    }
+
+    private func makeVerticalItemContainerViewWithoutButton(backgroundStyle: BackgroundStyle) -> UIView {
+        let view = VerticalItemContainerView().forAutoLayout()
+        view.configure(
+            with: VerticalItemContainerView.ViewModel(
+                title: "Long long long long long long long long header",
+                buttonTitle: "Button",
+                backgroundStyle: backgroundStyle,
+                buttonAction: { print("didTapButton") },
+                items: [
+                    VerticalItemView.ViewModel(
+                        icon: UIImage(named: "tui-avatar") ?? UIImage(),
+                        title: "Long long long long long long long long header",
+                        description: "Long long long long long description",
+                        didSelect: { print("didSelect item 0") }
+                    ),
+                    VerticalItemView.ViewModel(
+                        icon: UIImage(named: "tui-avatar") ?? UIImage(),
+                        title: "Long long long long long header",
+                        description: "Long long long long long description",
+                        didSelect: { print("didSelect item 1") }
+                    ),
+                    VerticalItemView.ViewModel(
+                        icon: UIImage(named: "tui-avatar") ?? UIImage(),
+                        title: "Long long long long long header",
+                        description: "Long long long long long description",
+                        didSelect: { print("didSelect item 2") }
+                    )
+                ]
+            )
+        )
+        return view
     }
 
     private func makeButton() -> UIView {
