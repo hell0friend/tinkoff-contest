@@ -57,6 +57,8 @@ final class SandboxViewController: UIViewController {
         stackView.addArrangedSubview(makeLeftIconHeaderViewWithButton())
         stackView.addArrangedSubview(makeVerticalItemContainerViewWithoutButton(backgroundStyle: .white))
         stackView.addArrangedSubview(makeVerticalItemContainerViewWithoutButton(backgroundStyle: .grey))
+        stackView.addArrangedSubview(makeVerticalItemContainerViewWithButton(backgroundStyle: .white))
+        stackView.addArrangedSubview(makeVerticalItemContainerViewWithButton(backgroundStyle: .grey))
     }
 
     private func makeHeaderWithTitleDescription(colorStyle: BackgroundStyle) -> UIView {
@@ -142,14 +144,47 @@ final class SandboxViewController: UIViewController {
         return header
     }
 
+    private func makeVerticalItemContainerViewWithButton(backgroundStyle: BackgroundStyle) -> UIView {
+        let view = VerticalItemContainerView().forAutoLayout()
+        view.configure(
+            with: VerticalItemContainerView.ViewModel(
+                title: "Long long long long long long long long header",
+                backgroundStyle: backgroundStyle,
+                topButtonConfiguration: .init(text: "Button", didTap: { print("did tap top button!") }),
+                bottomButtonConfiguration: .init(text: "Bottom Button", didTap: { print("did tap bottom button!") }),
+                items: [
+                    VerticalItemView.ViewModel(
+                        icon: UIImage(named: "tui-avatar") ?? UIImage(),
+                        title: "Long long long long long long long long header",
+                        description: "Long long long long long description",
+                        didSelect: { print("didSelect item 0") }
+                    ),
+                    VerticalItemView.ViewModel(
+                        icon: UIImage(named: "tui-avatar") ?? UIImage(),
+                        title: "Long long long long long header",
+                        description: "Long long long long long description",
+                        didSelect: { print("didSelect item 1") }
+                    ),
+                    VerticalItemView.ViewModel(
+                        icon: UIImage(named: "tui-avatar") ?? UIImage(),
+                        title: "Long long long long long header",
+                        description: "Long long long long long description",
+                        didSelect: { print("didSelect item 2") }
+                    )
+                ]
+            )
+        )
+        return view
+    }
+
     private func makeVerticalItemContainerViewWithoutButton(backgroundStyle: BackgroundStyle) -> UIView {
         let view = VerticalItemContainerView().forAutoLayout()
         view.configure(
             with: VerticalItemContainerView.ViewModel(
                 title: "Long long long long long long long long header",
-                buttonTitle: "Button",
                 backgroundStyle: backgroundStyle,
-                buttonAction: { print("didTapButton") },
+                topButtonConfiguration: .init(text: "Button", didTap: { print("did tap top button!") }),
+                bottomButtonConfiguration: nil,
                 items: [
                     VerticalItemView.ViewModel(
                         icon: UIImage(named: "tui-avatar") ?? UIImage(),

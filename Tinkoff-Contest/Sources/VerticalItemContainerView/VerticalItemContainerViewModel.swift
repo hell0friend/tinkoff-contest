@@ -11,24 +11,34 @@ extension VerticalItemContainerView {
 
     public struct ViewModel {
 
+        public struct ButtonConfiguration {
+            let text: String
+            let didTap: () -> Void
+
+            public init(text: String, didTap: @escaping () -> Void) {
+                self.text = text
+                self.didTap = didTap
+            }
+        }
+
         let title: String
-        let buttonTitle: String
-        let buttonAction: () -> Void
         let items: [VerticalItemView.ViewModel]
         let backgroundStyle: BackgroundStyle
+        let topButtonConfiguration: ButtonConfiguration
+        let bottomButtonConfiguration: ButtonConfiguration?
 
         public init(
             title: String,
-            buttonTitle: String,
             backgroundStyle: BackgroundStyle,
-            buttonAction: @escaping () -> Void,
+            topButtonConfiguration: ButtonConfiguration,
+            bottomButtonConfiguration: ButtonConfiguration?,
             items: [VerticalItemView.ViewModel]
         ) {
             self.title = title
-            self.buttonTitle = buttonTitle
-            self.buttonAction = buttonAction
+            self.topButtonConfiguration = topButtonConfiguration
             self.items = items
             self.backgroundStyle = backgroundStyle
+            self.bottomButtonConfiguration = bottomButtonConfiguration
         }
     }
 }
