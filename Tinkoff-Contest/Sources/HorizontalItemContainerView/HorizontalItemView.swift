@@ -45,11 +45,11 @@ private extension HorizontalItemView {
 
     func configureSubviews() {
         layer.cornerRadius = 12
-        backgroundColor = UIColor(red: 0, green: 0.063, blue: 0.141, alpha: 0.03)
+        backgroundColor = TCSColors.tappableElement
         titleLabel.font = .systemFont(ofSize: 15, weight: .semibold)
         subtitleLabel.font = .systemFont(ofSize: 13, weight: .regular)
-        titleLabel.textColor = UIColor(red: 51 / 255, green: 51 / 255, blue: 51 / 255, alpha: 1)
-        subtitleLabel.textColor = UIColor(red: 51 / 255, green: 51 / 255, blue: 51 / 255, alpha: 1)
+        titleLabel.textColor = TCSColors.defaultTitleColor
+        subtitleLabel.textColor = TCSColors.defaultTitleColor
         let tapGesture = UITapGestureRecognizer()
         isUserInteractionEnabled = true
         addGestureRecognizer(tapGesture)

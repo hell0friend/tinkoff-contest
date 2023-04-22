@@ -85,8 +85,8 @@ extension LeftIconHeaderView: ConfigurableItem {
 private extension LeftIconHeaderView {
 
     func configureViews() {
-        titleLabel.textColor = UIColor(red: 0.2, green: 0.2, blue: 0.2, alpha: 1)
-        subtitleLabel.textColor = UIColor(red: 0.573, green: 0.6, blue: 0.635, alpha: 1)
+        titleLabel.textColor = TCSColors.defaultTitleColor
+        subtitleLabel.textColor = TCSColors.defaultSubtitleColor
         titleLabel.font = .systemFont(ofSize: 17, weight: .regular)
         subtitleLabel.font = .systemFont(ofSize: 13, weight: .regular)
 

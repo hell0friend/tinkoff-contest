@@ -88,9 +88,9 @@ private extension VerticalItemContainerView {
 
     func configureSubviews() {
         titleLabel.font = .systemFont(ofSize: 20, weight: .bold)
-        titleLabel.textColor = UIColor(red: 0.2, green: 0.2, blue: 0.2, alpha: 1)
+        titleLabel.textColor = TCSColors.defaultTitleColor
         topButton.titleLabel?.font = .systemFont(ofSize: 17, weight: .regular)
-        topButton.setTitleColor(UIColor(red: 0.259, green: 0.545, blue: 0.976, alpha: 1), for: .normal)
+        topButton.setTitleColor(TCSColors.defaultButtonTextColor, for: .normal)
         itemsStackView.spacing = 4
         itemsStackView.axis = .vertical
         topButton.addTarget(self, action: #selector(didTapTopButton), for: .touchUpInside)
