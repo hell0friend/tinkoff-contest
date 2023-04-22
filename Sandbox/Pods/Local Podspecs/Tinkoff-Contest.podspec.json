@@ -1,0 +1,28 @@
+{
+  "name": "Tinkoff-Contest",
+  "version": "1.0.0",
+  "summary": "Модуль дизайн системы",
+  "swift_versions": "5.0",
+  "description": "Модуль дизайн системы для Tinkoff Contest",
+  "homepage": "https://github.com/hell0friend/tinkoff-contest",
+  "license": {
+    "type": "Custom",
+    "text": "    Copyright 2023\n    Permission is granted to Tinkoff-Contest\n"
+  },
+  "authors": {
+    "Alex Mironov": "alex.mir812@gmail.com"
+  },
+  "pod_target_xcconfig": {
+    "SWIFT_INSTALL_OBJC_HEADER": "NO"
+  },
+  "platforms": {
+    "ios": "14.0"
+  },
+  "source": {
+    "git": "git@github.com:hell0friend/tinkoff-contest.git",
+    "tag": "1.0.0"
+  },
+  "source_files": "Tinkoff-Contest/Sources/**/*",
+  "resources": "Tinkoff-Contest/Resources/**/*.{xcassets,otf}",
+  "swift_version": "5.0"
+}

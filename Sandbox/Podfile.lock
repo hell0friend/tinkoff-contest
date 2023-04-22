@@ -1,0 +1,16 @@
+PODS:
+  - TinkoffContest (1.0.0)
+
+DEPENDENCIES:
+  - TinkoffContest (from `./../`)
+
+EXTERNAL SOURCES:
+  TinkoffContest:
+    :path: "./../"
+
+SPEC CHECKSUMS:
+  TinkoffContest: 7407cd11514cfabb24ab35d4278ae9768193fca1
+
+PODFILE CHECKSUM: 93a54fa9db27ada321373d34b2a125d147056d80
+
+COCOAPODS: 1.11.3

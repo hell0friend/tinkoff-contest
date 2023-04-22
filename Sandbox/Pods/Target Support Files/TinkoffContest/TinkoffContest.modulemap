@@ -1,0 +1,6 @@
+framework module TinkoffContest {
+  umbrella header "TinkoffContest-umbrella.h"
+
+  export *
+  module * { export * }
+}
