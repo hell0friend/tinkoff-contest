@@ -21,6 +21,10 @@ extension LeftIconHeaderView {
         let icon: UIImage
         let closeStyle: CloseStyle
 
+        /// title: Заголовок
+        /// description: Подзаголовок, описание
+        /// icon: Иконка
+        /// closeStyle: none - кнопки нет, задается стиль для фона; action - задается картинка, фон берется по умолчанию .white
         public init(title: String, description: String, icon: UIImage, closeStyle: CloseStyle) {
             self.title = title
             self.description = description

@@ -26,9 +26,9 @@ extension CardContentView: ConfigurableItem {
     public func configure(with object: Any) {
         guard let viewModel = object as? ViewModel else { return }
 
+        backgroundColor = viewModel.backgroundStyle.backgroundColor
         switch viewModel.backgroundStyle {
         case .white:
-            backgroundColor = .white
             dropShadow(
                 radius: 34,
                 color: UIColor(red: 0, green: 0, blue: 0, alpha: 0.12),
@@ -36,7 +36,6 @@ extension CardContentView: ConfigurableItem {
                 offsetY: 6
             )
         case .grey:
-            backgroundColor = UIColor(red: 246 / 255, green: 247 / 255, blue: 248 / 255, alpha: 1)
             removeShadow()
         }
     }

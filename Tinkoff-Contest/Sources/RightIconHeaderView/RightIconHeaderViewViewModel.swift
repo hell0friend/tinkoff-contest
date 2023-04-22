@@ -19,6 +19,9 @@ extension RightIconHeaderView {
         let icon: UIImage
         let backgroundStyle: BackgroundStyle
 
+        /// state: title - показывается только заголовок; titleAndDescription - показываются заголовок и подзаголовок; button - показываются заголовок, подзаголовок и кнопка
+        /// icon: Иконка
+        /// backgroundStyle: стиль для фона
         public init(state: State, icon: UIImage, backgroundStyle: BackgroundStyle) {
             self.state = state
             self.icon = icon

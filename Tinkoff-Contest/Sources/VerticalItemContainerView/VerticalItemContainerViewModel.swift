@@ -27,6 +27,11 @@ extension VerticalItemContainerView {
         let topButtonConfiguration: ButtonConfiguration
         let bottomButtonConfiguration: ButtonConfiguration?
 
+        /// title: Заголовок
+        /// backgroundStyle: Стиль для фона
+        /// topButtonConfiguration: Конфигурация для верхней кнопки
+        /// bottomButtonConfiguration: Конфигурация для нижней кнопки. Если nil, то кнопка будет скрыта
+        /// items: Модели для списка элементов
         public init(
             title: String,
             backgroundStyle: BackgroundStyle,
