@@ -1,5 +1,5 @@
 //
-//  VerticalItemContainerView.swift
+//  HorizontalItemContainerView.swift
 //  Tinkoff-Contest
 //
 //  Created by Alexander Mironov on 22.04.2023.
@@ -7,24 +7,16 @@
 
 import UIKit
 
-public final class VerticalItemContainerView: UIView {
+public final class HorizontalItemContainerView: UIView {
 
     private let cardContentView = CardContentView().forAutoLayout()
     private let titleLabel = UILabel().forAutoLayout()
     private let topButton = UIButton().forAutoLayout()
     private let itemsStackView = UIStackView().forAutoLayout()
-    private let bottomButton = TCSButton().forAutoLayout()
+    private let scrollView = UIScrollView().forAutoLayout()
+    private let scrollContentView = UIView().forAutoLayout()
 
-    private lazy var stackViewBottomConstraintWithoutBottomButton = itemsStackView.bottomAnchor.constraint(
-        equalTo: cardContentView.bottomAnchor,
-        constant: -12
-    )
-
-    private lazy var bottomButtonTopConstraint = bottomButton.topAnchor.constraint(
-        equalTo: itemsStackView.bottomAnchor,
-        constant: 12
-    )
-    private lazy var bottomButtonBottomConstraint = bottomButton.bottomAnchor.constraint(
+    private lazy var bottomConstraintWithoutButton = scrollView.bottomAnchor.constraint(
         equalTo: cardContentView.bottomAnchor,
         constant: -20
     )
@@ -46,7 +38,7 @@ public final class VerticalItemContainerView: UIView {
     }
 }
 
-extension VerticalItemContainerView: ConfigurableItem {
+extension HorizontalItemContainerView: ConfigurableItem {
 
     public func configure(with object: Any) {
         guard let viewModel = object as? ViewModel else { return }
@@ -56,53 +48,47 @@ extension VerticalItemContainerView: ConfigurableItem {
         didTapTopButtonClosure = viewModel.topButtonConfiguration.didTap
 
         itemsStackView.arrangedSubviews.forEach { itemsStackView.removeArrangedSubview($0) }
-
         viewModel.items.forEach { item in
-            let itemView = VerticalItemView().forAutoLayout()
+            let itemView = HorizontalItemView().forAutoLayout()
             itemView.configure(with: item)
             itemsStackView.addArrangedSubview(itemView)
         }
 
-        cardContentView.configure(with: CardContentView.ViewModel(backgroundStyle: viewModel.backgroundStyle))
-
         if let bottomButtonConfiguration = viewModel.bottomButtonConfiguration {
-            bottomButton.isHidden = false
-            bottomButton.didTapClosure = bottomButtonConfiguration.didTap
-            bottomButton.setTitle(bottomButtonConfiguration.text, for: .normal)
-            bottomButton.setTitle(bottomButtonConfiguration.text, for: .highlighted)
-            stackViewBottomConstraintWithoutBottomButton.isActive = false
-            bottomButtonTopConstraint.isActive = true
-            bottomButtonBottomConstraint.isActive = true
+            bottomConstraintWithoutButton.isActive = false
         } else {
-            bottomButton.isHidden = true
-            stackViewBottomConstraintWithoutBottomButton.isActive = true
-            bottomButtonTopConstraint.isActive = false
-            bottomButtonBottomConstraint.isActive = false
+            bottomConstraintWithoutButton.isActive = true
         }
 
         layoutIfNeeded()
     }
 }
 
-private extension VerticalItemContainerView {
+private extension HorizontalItemContainerView {
 
     func configureSubviews() {
+        cardContentView.configure(with: CardContentView.ViewModel(backgroundStyle: .white))
         titleLabel.font = .systemFont(ofSize: 20, weight: .bold)
         titleLabel.textColor = UIColor(red: 0.2, green: 0.2, blue: 0.2, alpha: 1)
         topButton.titleLabel?.font = .systemFont(ofSize: 17, weight: .regular)
         topButton.setTitleColor(UIColor(red: 0.259, green: 0.545, blue: 0.976, alpha: 1), for: .normal)
-        itemsStackView.spacing = 4
-        itemsStackView.axis = .vertical
+        itemsStackView.spacing = 12
+        itemsStackView.axis = .horizontal
         topButton.addTarget(self, action: #selector(didTapTopButton), for: .touchUpInside)
         titleLabel.setContentCompressionResistancePriority(.defaultLow, for: .horizontal)
+        scrollView.showsVerticalScrollIndicator = false
+        scrollView.showsHorizontalScrollIndicator = false
+        scrollView.contentInset.left = 20
+        scrollView.contentInset.right = 20
     }
 
     func addSubviews() {
         addSubview(cardContentView)
         cardContentView.addSubview(titleLabel)
         cardContentView.addSubview(topButton)
-        cardContentView.addSubview(itemsStackView)
-        cardContentView.addSubview(bottomButton)
+        cardContentView.addSubview(scrollView)
+        scrollView.addSubview(scrollContentView)
+        scrollContentView.addSubview(itemsStackView)
     }
 
     func activateConstraints() {
@@ -118,12 +104,20 @@ private extension VerticalItemContainerView {
                 topButton.topAnchor.constraint(equalTo: cardContentView.topAnchor, constant: 18),
                 topButton.trailingAnchor.constraint(equalTo: cardContentView.trailingAnchor, constant: -20),
                 topButton.heightAnchor.constraint(equalToConstant: 20),
-                itemsStackView.leadingAnchor.constraint(equalTo: cardContentView.leadingAnchor, constant: 4),
-                itemsStackView.trailingAnchor.constraint(equalTo: cardContentView.trailingAnchor, constant: -4),
-                itemsStackView.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 12),
-                bottomButton.leadingAnchor.constraint(equalTo: cardContentView.leadingAnchor, constant: 20),
-                bottomButton.trailingAnchor.constraint(equalTo: cardContentView.trailingAnchor, constant: -20),
-                stackViewBottomConstraintWithoutBottomButton
+                scrollView.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 12),
+                scrollView.leadingAnchor.constraint(equalTo: cardContentView.leadingAnchor),
+                scrollView.trailingAnchor.constraint(equalTo: cardContentView.trailingAnchor),
+                scrollView.heightAnchor.constraint(equalToConstant: 140),
+                scrollContentView.topAnchor.constraint(equalTo: scrollView.topAnchor),
+                scrollContentView.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor),
+                scrollContentView.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor),
+                scrollContentView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor),
+                scrollContentView.heightAnchor.constraint(equalToConstant: 140),
+                scrollContentView.topAnchor.constraint(equalTo: itemsStackView.topAnchor),
+                scrollContentView.leadingAnchor.constraint(equalTo: itemsStackView.leadingAnchor),
+                scrollContentView.trailingAnchor.constraint(equalTo: itemsStackView.trailingAnchor),
+                scrollContentView.bottomAnchor.constraint(equalTo: itemsStackView.bottomAnchor),
+                bottomConstraintWithoutButton
             ]
         )
     }

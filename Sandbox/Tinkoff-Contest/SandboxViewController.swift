@@ -59,6 +59,47 @@ final class SandboxViewController: UIViewController {
         stackView.addArrangedSubview(makeVerticalItemContainerViewWithoutButton(backgroundStyle: .grey))
         stackView.addArrangedSubview(makeVerticalItemContainerViewWithButton(backgroundStyle: .white))
         stackView.addArrangedSubview(makeVerticalItemContainerViewWithButton(backgroundStyle: .grey))
+        stackView.addArrangedSubview(makeHorizontalItemContainerViewWithoutButton())
+    }
+
+    private func makeHorizontalItemContainerViewWithoutButton() -> UIView {
+        let view = HorizontalItemContainerView().forAutoLayout()
+
+        view.configure(
+            with: HorizontalItemContainerView.ViewModel(
+                title: "Long long long long long long long long header",
+                topButtonConfiguration: .init(text: "Button", didTap: { print("did tap top button!") }),
+                bottomButtonConfiguration: nil,
+                items: [
+                    HorizontalItemView.ViewModel(
+                        icon: UIImage(named: "tui-avatar") ?? UIImage(),
+                        title: "Long long long long long header",
+                        description: "Long long long long long description",
+                        didSelect: { print("didSelect item 0") }
+                    ),
+                    HorizontalItemView.ViewModel(
+                        icon: UIImage(named: "tui-avatar") ?? UIImage(),
+                        title: "Long long long long long header",
+                        description: "Long long long long long description",
+                        didSelect: { print("didSelect item 1") }
+                    ),
+                    HorizontalItemView.ViewModel(
+                        icon: UIImage(named: "tui-avatar") ?? UIImage(),
+                        title: "Long long long long long header",
+                        description: "Long long long long long description",
+                        didSelect: { print("didSelect item 2") }
+                    ),
+                    HorizontalItemView.ViewModel(
+                        icon: UIImage(named: "tui-avatar") ?? UIImage(),
+                        title: "Long long long long long header",
+                        description: "Long long long long long description",
+                        didSelect: { print("didSelect item 3") }
+                    )
+                ]
+            )
+        )
+
+        return view
     }
 
     private func makeHeaderWithTitleDescription(colorStyle: BackgroundStyle) -> UIView {
