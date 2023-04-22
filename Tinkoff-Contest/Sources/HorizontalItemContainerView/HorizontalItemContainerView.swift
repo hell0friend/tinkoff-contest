@@ -15,8 +15,18 @@ public final class HorizontalItemContainerView: UIView {
     private let itemsStackView = UIStackView().forAutoLayout()
     private let scrollView = UIScrollView().forAutoLayout()
     private let scrollContentView = UIView().forAutoLayout()
+    private let bottomButton = TCSButton().forAutoLayout()
 
     private lazy var bottomConstraintWithoutButton = scrollView.bottomAnchor.constraint(
+        equalTo: cardContentView.bottomAnchor,
+        constant: -20
+    )
+
+    private lazy var bottomButtonTopConstraint = bottomButton.topAnchor.constraint(
+        equalTo: scrollView.bottomAnchor,
+        constant: 20
+    )
+    private lazy var bottomConstraintWithButton = bottomButton.bottomAnchor.constraint(
         equalTo: cardContentView.bottomAnchor,
         constant: -20
     )
@@ -56,8 +66,17 @@ extension HorizontalItemContainerView: ConfigurableItem {
 
         if let bottomButtonConfiguration = viewModel.bottomButtonConfiguration {
             bottomConstraintWithoutButton.isActive = false
+            bottomButtonTopConstraint.isActive = true
+            bottomConstraintWithButton.isActive = true
+            bottomButton.isHidden = false
+            bottomButton.setTitle(bottomButtonConfiguration.text, for: .normal)
+            bottomButton.setTitle(bottomButtonConfiguration.text, for: .highlighted)
+            bottomButton.didTapClosure = bottomButtonConfiguration.didTap
         } else {
             bottomConstraintWithoutButton.isActive = true
+            bottomButtonTopConstraint.isActive = false
+            bottomConstraintWithButton.isActive = false
+            bottomButton.isHidden = true
         }
 
         layoutIfNeeded()
@@ -89,6 +108,7 @@ private extension HorizontalItemContainerView {
         cardContentView.addSubview(scrollView)
         scrollView.addSubview(scrollContentView)
         scrollContentView.addSubview(itemsStackView)
+        cardContentView.addSubview(bottomButton)
     }
 
     func activateConstraints() {
@@ -117,7 +137,9 @@ private extension HorizontalItemContainerView {
                 scrollContentView.leadingAnchor.constraint(equalTo: itemsStackView.leadingAnchor),
                 scrollContentView.trailingAnchor.constraint(equalTo: itemsStackView.trailingAnchor),
                 scrollContentView.bottomAnchor.constraint(equalTo: itemsStackView.bottomAnchor),
-                bottomConstraintWithoutButton
+                bottomConstraintWithoutButton,
+                bottomButton.leadingAnchor.constraint(equalTo: cardContentView.leadingAnchor, constant: 20),
+                bottomButton.trailingAnchor.constraint(equalTo: cardContentView.trailingAnchor, constant: -20)
             ]
         )
     }
