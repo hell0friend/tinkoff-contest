@@ -16,6 +16,10 @@ extension HorizontalItemView {
         let description: String
         let didSelect: () -> Void
 
+        /// icon: Иконка наверху
+        /// title: Заголовок
+        /// description: Подзаголовок, описание
+        /// didSelect: Замыкание, вызывающееся при нажатии на область View
         public init(icon: UIImage, title: String, description: String, didSelect: @escaping () -> Void) {
             self.icon = icon
             self.title = title
