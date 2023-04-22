@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-TinkoffContestTests/Pods-TinkoffContestTests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/TinkoffContest/TinkoffContest.framework
+${BUILT_PRODUCTS_DIR}/SnapshotTesting/SnapshotTesting.framework

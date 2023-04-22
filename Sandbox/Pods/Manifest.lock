@@ -1,16 +1,23 @@
 PODS:
+  - SnapshotTesting (1.9.0)
   - TinkoffContest (1.0.0)
 
 DEPENDENCIES:
+  - SnapshotTesting (= 1.9.0)
   - TinkoffContest (from `./../`)
+
+SPEC REPOS:
+  trunk:
+    - SnapshotTesting
 
 EXTERNAL SOURCES:
   TinkoffContest:
     :path: "./../"
 
 SPEC CHECKSUMS:
+  SnapshotTesting: 6141c48b6aa76ead61431ca665c14ab9a066c53b
   TinkoffContest: 7407cd11514cfabb24ab35d4278ae9768193fca1
 
-PODFILE CHECKSUM: 93a54fa9db27ada321373d34b2a125d147056d80
+PODFILE CHECKSUM: aa2e54b8cc47923b69a924012e088714adefe626
 
 COCOAPODS: 1.11.3

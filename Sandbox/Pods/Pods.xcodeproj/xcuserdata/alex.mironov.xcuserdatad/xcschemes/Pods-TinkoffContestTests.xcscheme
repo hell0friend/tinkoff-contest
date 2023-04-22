@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "410D48D208151DB0CB3B380C3A257F0E"
-               BuildableName = "Tinkoff_Contest.framework"
-               BlueprintName = "Tinkoff-Contest"
-               ReferencedContainer = "container:Pods/Pods.xcodeproj">
+               BlueprintIdentifier = "D799862985EE0EF605356D55712B347B"
+               BuildableName = "Pods_TinkoffContestTests.framework"
+               BlueprintName = "Pods-TinkoffContestTests"
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,17 +28,6 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO"
-            parallelizable = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "843C4FD929F41ABE00DB87A4"
-               BuildableName = "TinkoffContestTests.xctest"
-               BlueprintName = "TinkoffContestTests"
-               ReferencedContainer = "container:Tinkoff-Contest.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
@@ -51,16 +40,6 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8409073229F3DA1700CFF129"
-            BuildableName = "Tinkoff-Contest.app"
-            BlueprintName = "Tinkoff-Contest"
-            ReferencedContainer = "container:Tinkoff-Contest.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -68,15 +47,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "410D48D208151DB0CB3B380C3A257F0E"
-            BuildableName = "Tinkoff_Contest.framework"
-            BlueprintName = "Tinkoff-Contest"
-            ReferencedContainer = "container:Pods/Pods.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
