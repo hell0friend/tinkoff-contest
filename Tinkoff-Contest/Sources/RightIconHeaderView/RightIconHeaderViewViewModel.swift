@@ -1,5 +1,5 @@
 //
-//  HeaderViewViewModel.swift
+//  RightIconHeaderViewViewModel.swift
 //  Tinkoff-Contest
 //
 //  Created by Alexander Mironov on 22.04.2023.
@@ -15,19 +15,14 @@ extension RightIconHeaderView {
             case button(title: String, description: String, buttonText: String, buttonAction: (() -> Void)?)
         }
 
-        public enum ColorStyle {
-            case white
-            case grey
-        }
-
         let state: State
         let icon: UIImage
-        let colorStyle: ColorStyle
+        let backgroundStyle: BackgroundStyle
 
-        public init(state: State, icon: UIImage, colorStyle: ColorStyle) {
+        public init(state: State, icon: UIImage, backgroundStyle: BackgroundStyle) {
             self.state = state
             self.icon = icon
-            self.colorStyle = colorStyle
+            self.backgroundStyle = backgroundStyle
         }
     }
 }

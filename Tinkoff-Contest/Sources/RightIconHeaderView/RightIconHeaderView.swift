@@ -1,5 +1,5 @@
 //
-//  HeaderView.swift
+//  RightIconHeaderView.swift
 //  Tinkoff-Contest
 //
 //  Created by Alexander Mironov on 22.04.2023.
@@ -15,8 +15,6 @@ public final class RightIconHeaderView: UIView {
     private let subtitleLabel = UILabel().forAutoLayout()
     private let iconView = UIImageView().forAutoLayout()
     private let button = TCSButton().forAutoLayout()
-
-    private var didTapButtonClosure: (() -> Void)?
 
     // Для состояния title
     private lazy var titleCenterYConstraint = titleLabel.centerYAnchor.constraint(
@@ -57,6 +55,7 @@ public final class RightIconHeaderView: UIView {
         activateConstraints()
     }
 
+    @available(*, unavailable)
     required init?(coder: NSCoder) {
         super.init(coder: coder)
     }
@@ -100,7 +99,7 @@ extension RightIconHeaderView: ConfigurableItem {
             titleLabel.text = title
             subtitleLabel.text = description
             button.setTitle(buttonText, for: .normal)
-            didTapButtonClosure = buttonAction
+            button.didTapClosure = buttonAction
 
             titleCenterYConstraint.isActive = false
             iconViewBottomConstraint.isActive = false
@@ -113,7 +112,7 @@ extension RightIconHeaderView: ConfigurableItem {
             button.isHidden = false
         }
 
-        switch viewModel.colorStyle {
+        switch viewModel.backgroundStyle {
         case .white:
             cardContentView.backgroundColor = .white
             cardContentView.dropShadow(
@@ -140,7 +139,6 @@ private extension RightIconHeaderView {
         subtitleLabel.textColor = UIColor(red: 146 / 255, green: 153 / 255, blue: 162 / 255, alpha: 1)
         titleLabel.font = .systemFont(ofSize: 20, weight: .bold)
         subtitleLabel.font = .systemFont(ofSize: 15, weight: .regular)
-        button.addTarget(self, action: #selector(didTapButton), for: .touchUpInside)
     }
 
     func addSubviews() {
@@ -185,9 +183,5 @@ private extension RightIconHeaderView {
                 iconViewBottomConstraint
             ]
         )
-    }
-
-    @objc private func didTapButton() {
-        didTapButtonClosure?()
     }
 }

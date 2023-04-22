@@ -9,6 +9,8 @@ import UIKit
 
 public final class TCSButton: UIButton {
 
+    public var didTapClosure: (() -> Void)?
+
     public init(height: CGFloat? = 44) {
         super.init(frame: .zero)
 
@@ -23,8 +25,11 @@ public final class TCSButton: UIButton {
             translatesAutoresizingMaskIntoConstraints = false
             heightAnchor.constraint(equalToConstant: height).isActive = true
         }
+
+        addTarget(self, action: #selector(didTap), for: .touchUpInside)
     }
 
+    @available(*, unavailable)
     required init?(coder: NSCoder) {
         super.init(coder: coder)
     }
@@ -39,5 +44,9 @@ public final class TCSButton: UIButton {
             UIGraphicsEndImageContext()
             self.setBackgroundImage(colorImage, for: forState)
         }
+    }
+
+    @objc private func didTap() {
+        didTapClosure?()
     }
 }

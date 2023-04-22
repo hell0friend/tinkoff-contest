@@ -52,9 +52,12 @@ final class SandboxViewController: UIViewController {
         stackView.addArrangedSubview(makeHeaderWithTitleDescription(colorStyle: .white))
         stackView.addArrangedSubview(makeHeaderWithTitleDescription(colorStyle: .grey))
         stackView.addArrangedSubview(makeButton())
+        stackView.addArrangedSubview(makeLeftIconHeaderViewWithoutButton(colorStyle: .white))
+        stackView.addArrangedSubview(makeLeftIconHeaderViewWithoutButton(colorStyle: .grey))
+        stackView.addArrangedSubview(makeLeftIconHeaderViewWithButton())
     }
 
-    private func makeHeaderWithTitleDescription(colorStyle: RightIconHeaderView.ViewModel.ColorStyle) -> UIView {
+    private func makeHeaderWithTitleDescription(colorStyle: BackgroundStyle) -> UIView {
         let header = RightIconHeaderView().forAutoLayout()
 
         header.configure(
@@ -64,28 +67,28 @@ final class SandboxViewController: UIViewController {
                     description: "Long long long long long description"
                 ),
                 icon: UIImage(named: "tui-avatar") ?? UIImage(),
-                colorStyle: colorStyle
+                backgroundStyle: colorStyle
             )
         )
 
         return header
     }
 
-    private func makeHeaderWithTitle(colorStyle: RightIconHeaderView.ViewModel.ColorStyle) -> UIView {
+    private func makeHeaderWithTitle(colorStyle: BackgroundStyle) -> UIView {
         let header = RightIconHeaderView().forAutoLayout()
 
         header.configure(
             with: RightIconHeaderView.ViewModel(
                 state: .title("Long long long long long header"),
                 icon: UIImage(named: "tui-avatar") ?? UIImage(),
-                colorStyle: colorStyle
+                backgroundStyle: colorStyle
             )
         )
 
         return header
     }
 
-    private func makeHeaderWithButton(colorStyle: RightIconHeaderView.ViewModel.ColorStyle) -> UIView {
+    private func makeHeaderWithButton(colorStyle: BackgroundStyle) -> UIView {
         let header = RightIconHeaderView().forAutoLayout()
 
         header.configure(
@@ -97,7 +100,40 @@ final class SandboxViewController: UIViewController {
                     buttonAction: { print("didTap!") }
                 ),
                 icon: UIImage(named: "tui-avatar") ?? UIImage(),
-                colorStyle: colorStyle
+                backgroundStyle: colorStyle
+            )
+        )
+
+        return header
+    }
+
+    private func makeLeftIconHeaderViewWithoutButton(colorStyle: BackgroundStyle) -> UIView {
+        let header = LeftIconHeaderView().forAutoLayout()
+
+        header.configure(
+            with: LeftIconHeaderView.ViewModel(
+                title: "Long long long long long header",
+                description: "Long long long long long description",
+                icon: UIImage(named: "tui-avatar") ?? UIImage(),
+                closeStyle: .none(colorStyle)
+            )
+        )
+
+        return header
+    }
+
+    private func makeLeftIconHeaderViewWithButton() -> UIView {
+        let header = LeftIconHeaderView().forAutoLayout()
+
+        header.configure(
+            with: LeftIconHeaderView.ViewModel(
+                title: "Long long long long long header",
+                description: "Long long long long long description",
+                icon: UIImage(named: "tui-avatar") ?? UIImage(),
+                closeStyle: .action(
+                    didClose: { print("didClose!") },
+                    image: UIImage(named: "tui-button") ?? UIImage()
+                )
             )
         )
 
@@ -107,6 +143,7 @@ final class SandboxViewController: UIViewController {
     private func makeButton() -> UIView {
         let button = TCSButton().forAutoLayout()
         button.setTitle("Button", for: .normal)
+        button.didTapClosure = { print("didTap!") }
         return button
     }
 }
