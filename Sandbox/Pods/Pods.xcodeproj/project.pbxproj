@@ -7,24 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07CB20C7DA30A80200A3A5FA7A3E27D4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		116942E1B045384C9749EB030B0806BA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		2FB4668B6F9653891FEE6C51144EDEF3 /* LeftIconHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C57E3C8D4A8BAB7E186A7949EE729A /* LeftIconHeaderView.swift */; };
-		3FB34122D3FF1F8A87E44CD0E37C3E44 /* TinkoffContest-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0651435FF6D22FFFFCB9456914A14CF1 /* TinkoffContest-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		754C8A5FAD7636A231D2C3883D8DBF52 /* LeftIconHeaderViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373F1B345A26F495D10190A0F060DF9A /* LeftIconHeaderViewViewModel.swift */; };
-		7BCDF5FC782DA91057A86662CF1E648E /* RightIconHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1980CD769EE3D1D01408D4E8A6E6C9 /* RightIconHeaderView.swift */; };
-		83523D0A290FB99E7FDBCC70EC6B7666 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		84E9EDEC29F3FA8E00B82D82 /* BackgroundStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E9EDEB29F3FA8E00B82D82 /* BackgroundStyle.swift */; };
-		8D5FBC0605E14D4E8582B45974F58CB6 /* UIKitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D57EF73D9DB216C0C75A215D90D657 /* UIKitExtensions.swift */; };
+		26C94C1A2CC77EE635A1B6CFC19EBC5B /* RightIconHeaderViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571993FACD564DEAD57413AC769F28E2 /* RightIconHeaderViewViewModel.swift */; };
+		32815610E08F2FD1AF87F7AE9A9CFBDB /* TinkoffContest-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D28F19410A0B2718204608149907A6E /* TinkoffContest-dummy.m */; };
+		605FF73A0B837F2D2DCC45CE6C74D70A /* TinkoffContest-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C955F6290A38E6528F5B5D078D3A8575 /* TinkoffContest-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		612BEEA3FE277FA8867C65473D2DEBF0 /* UIKitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B4E375801EC5B5634D1E05A5E5DA07 /* UIKitExtensions.swift */; };
+		7092933FB3DE8E6B9A254C2A2D5D6EDB /* LeftIconHeaderViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A740D4E21B3947F4399D6A4B9951A8A5 /* LeftIconHeaderViewViewModel.swift */; };
+		760F0EEBA3ADA3CAF17030DEF2CEA247 /* RightIconHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CEAA5EBD737518D9AB77A5563E505B /* RightIconHeaderView.swift */; };
+		780418CB37D066516DB9A4D044C4264B /* TCSButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592647831D457E13A352033B420825BE /* TCSButton.swift */; };
+		7A24D744A2E2A74586C7CA9E4EE01D40 /* ConfigurableItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A380EDDF8344007A157DEB73FF513EE2 /* ConfigurableItem.swift */; };
+		936DEF3EDBC63CF4255AE8D807D8CB72 /* BackgroundStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4877181F879BC1D45203A5DA26995CF6 /* BackgroundStyle.swift */; };
 		ADC4FE2766E442DAF28AB09410F9785E /* Pods-Tinkoff-Contest-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AFBFFD4537DDCC05E41B979C797A068 /* Pods-Tinkoff-Contest-dummy.m */; };
-		B2696FC1B0A0A11C557B2DD91E12EE65 /* ConfigurableItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F979DB6D6B8B3C70F18F79A3B48CC98 /* ConfigurableItem.swift */; };
-		C7990BD710CF2DC253BCC240DDAD89D9 /* TCSButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A69C757FD1BBCCF0A8B969CD0D2FBA /* TCSButton.swift */; };
-		D2FC18AE41987850C3485F6CE3B6D8EF /* TinkoffContest-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F992CAC2C98F60F37CA40A5E4AA67E0 /* TinkoffContest-dummy.m */; };
-		EA8F185811F355C18EB8D6BEF73EF354 /* RightIconHeaderViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B7A1601CC9C8AA2AA88271425EF4BD /* RightIconHeaderViewViewModel.swift */; };
+		D88BBD461173B8AC3AF1330C3721E001 /* LeftIconHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08980E8D28AE10AE278BA45392947709 /* LeftIconHeaderView.swift */; };
 		F013C3E567EB72181C7189CBF570FB2C /* Pods-Tinkoff-Contest-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D02248FDD13380CD845ED2959875DAA4 /* Pods-Tinkoff-Contest-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		8B933A93CF51EC7DB6CF364BC4E97203 /* PBXContainerItemProxy */ = {
+		7C38ACF5C17800C4956A14A29336C1B9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -34,44 +34,44 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0651435FF6D22FFFFCB9456914A14CF1 /* TinkoffContest-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TinkoffContest-umbrella.h"; sourceTree = "<group>"; };
-		1F334B44B4D5BB22A356FCE2161B92EC /* TinkoffContest.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = TinkoffContest.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		373F1B345A26F495D10190A0F060DF9A /* LeftIconHeaderViewViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LeftIconHeaderViewViewModel.swift; sourceTree = "<group>"; };
+		028535D0253CD57B63A53102A612EBC3 /* TinkoffContest.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TinkoffContest.modulemap; sourceTree = "<group>"; };
+		08980E8D28AE10AE278BA45392947709 /* LeftIconHeaderView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LeftIconHeaderView.swift; sourceTree = "<group>"; };
+		177E8804F4C40D1C59A8F40F1D3323AC /* TinkoffContest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TinkoffContest.release.xcconfig; sourceTree = "<group>"; };
+		1D28F19410A0B2718204608149907A6E /* TinkoffContest-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TinkoffContest-dummy.m"; sourceTree = "<group>"; };
+		2AAB3E9EF4C4A88CE37013D926B286A0 /* TinkoffContest.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = TinkoffContest.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		48013E9305A676B36251ED8486459C13 /* Pods-Tinkoff-Contest-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Tinkoff-Contest-Info.plist"; sourceTree = "<group>"; };
+		4877181F879BC1D45203A5DA26995CF6 /* BackgroundStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BackgroundStyle.swift; sourceTree = "<group>"; };
 		4E70493E354FF9C62D9665441415E3E4 /* Pods-Tinkoff-Contest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tinkoff-Contest.debug.xcconfig"; sourceTree = "<group>"; };
-		5F979DB6D6B8B3C70F18F79A3B48CC98 /* ConfigurableItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ConfigurableItem.swift; sourceTree = "<group>"; };
-		5F992CAC2C98F60F37CA40A5E4AA67E0 /* TinkoffContest-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TinkoffContest-dummy.m"; sourceTree = "<group>"; };
-		60A58F484305B5F50ADE7740E3D6F8C0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		65A69C757FD1BBCCF0A8B969CD0D2FBA /* TCSButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TCSButton.swift; sourceTree = "<group>"; };
-		66C57E3C8D4A8BAB7E186A7949EE729A /* LeftIconHeaderView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LeftIconHeaderView.swift; sourceTree = "<group>"; };
+		571993FACD564DEAD57413AC769F28E2 /* RightIconHeaderViewViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RightIconHeaderViewViewModel.swift; sourceTree = "<group>"; };
+		592647831D457E13A352033B420825BE /* TCSButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TCSButton.swift; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		783BF521F8EFF0FC1895349E9B5C5A24 /* Pods-Tinkoff-Contest-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Tinkoff-Contest-acknowledgements.plist"; sourceTree = "<group>"; };
-		79D57EF73D9DB216C0C75A215D90D657 /* UIKitExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIKitExtensions.swift; sourceTree = "<group>"; };
 		7A5363A1EC346137F07C2EB9F31E5551 /* TinkoffContest */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TinkoffContest; path = TinkoffContest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C13F7B9785ED999B91CF2A44457E8D8 /* Pods-Tinkoff-Contest.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Tinkoff-Contest.modulemap"; sourceTree = "<group>"; };
-		84E9EDEB29F3FA8E00B82D82 /* BackgroundStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundStyle.swift; sourceTree = "<group>"; };
 		8664BE9F74724C35CD0DDC952C44A4DB /* Pods-Tinkoff-Contest-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Tinkoff-Contest-frameworks.sh"; sourceTree = "<group>"; };
+		8A173255AE55033EA37C7A6B8E30AF6C /* TinkoffContest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TinkoffContest.debug.xcconfig; sourceTree = "<group>"; };
 		8AFBFFD4537DDCC05E41B979C797A068 /* Pods-Tinkoff-Contest-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Tinkoff-Contest-dummy.m"; sourceTree = "<group>"; };
 		8C1119008A49AD15749639DEAA14B09D /* Pods-Tinkoff-Contest */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Tinkoff-Contest"; path = Pods_Tinkoff_Contest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9A1980CD769EE3D1D01408D4E8A6E6C9 /* RightIconHeaderView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RightIconHeaderView.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A24CAAA3F718477CC07EC515A110DBA3 /* Pods-Tinkoff-Contest-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Tinkoff-Contest-acknowledgements.markdown"; sourceTree = "<group>"; };
-		A26E9FCCAD700C005E32364E9BC684E0 /* TinkoffContest-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TinkoffContest-prefix.pch"; sourceTree = "<group>"; };
-		AFA56393E822E088673920CDE8E0623A /* TinkoffContest.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TinkoffContest.modulemap; sourceTree = "<group>"; };
-		B4B7A1601CC9C8AA2AA88271425EF4BD /* RightIconHeaderViewViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RightIconHeaderViewViewModel.swift; sourceTree = "<group>"; };
-		B58147B206BF476A6D743B8B294997BB /* TinkoffContest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TinkoffContest.debug.xcconfig; sourceTree = "<group>"; };
-		BAA30FAF4D03C319AD47CCDBB70CF9E0 /* TinkoffContest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TinkoffContest.release.xcconfig; sourceTree = "<group>"; };
+		A380EDDF8344007A157DEB73FF513EE2 /* ConfigurableItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ConfigurableItem.swift; sourceTree = "<group>"; };
+		A5B4E375801EC5B5634D1E05A5E5DA07 /* UIKitExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIKitExtensions.swift; sourceTree = "<group>"; };
+		A740D4E21B3947F4399D6A4B9951A8A5 /* LeftIconHeaderViewViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LeftIconHeaderViewViewModel.swift; sourceTree = "<group>"; };
 		BEC2CAB6DD61A8861BED1E9EA9EEDBA1 /* Pods-Tinkoff-Contest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tinkoff-Contest.release.xcconfig"; sourceTree = "<group>"; };
+		C12D68BD1DC2E77DD9072E58886845D9 /* TinkoffContest-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TinkoffContest-prefix.pch"; sourceTree = "<group>"; };
+		C3CEAA5EBD737518D9AB77A5563E505B /* RightIconHeaderView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RightIconHeaderView.swift; sourceTree = "<group>"; };
+		C955F6290A38E6528F5B5D078D3A8575 /* TinkoffContest-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TinkoffContest-umbrella.h"; sourceTree = "<group>"; };
 		D02248FDD13380CD845ED2959875DAA4 /* Pods-Tinkoff-Contest-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Tinkoff-Contest-umbrella.h"; sourceTree = "<group>"; };
-		D287A4E1494FDE7CFF83225AB8CE9385 /* TinkoffContest-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TinkoffContest-Info.plist"; sourceTree = "<group>"; };
+		DCB3B1967AB3B17305D70803E7B9AF13 /* TinkoffContest-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TinkoffContest-Info.plist"; sourceTree = "<group>"; };
+		F459CF75F78A8DF4ED9F99208EDAC0AB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		8A54B41D94157F24FA663FA042674FA5 /* Frameworks */ = {
+		48DF39E948DA14CD4A8B92E43050758D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83523D0A290FB99E7FDBCC70EC6B7666 /* Foundation.framework in Frameworks */,
+				07CB20C7DA30A80200A3A5FA7A3E27D4 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,15 +86,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		132FE7E6F28E3DD0565068C7E11B1DEB /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				60A58F484305B5F50ADE7740E3D6F8C0 /* README.md */,
-				1F334B44B4D5BB22A356FCE2161B92EC /* TinkoffContest.podspec */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
 		2C1CF779C8C429A3CAFFA64F1ED20846 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +93,30 @@
 				7A5363A1EC346137F07C2EB9F31E5551 /* TinkoffContest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		36138B9A5A53282AF9B775B2A3AE119C /* RightIconHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				C3CEAA5EBD737518D9AB77A5563E505B /* RightIconHeaderView.swift */,
+				571993FACD564DEAD57413AC769F28E2 /* RightIconHeaderViewViewModel.swift */,
+			);
+			name = RightIconHeaderView;
+			path = "Tinkoff-Contest/Sources/RightIconHeaderView";
+			sourceTree = "<group>";
+		};
+		401E05F25BEC45C552C27F5E8AD35C88 /* TinkoffContest */ = {
+			isa = PBXGroup;
+			children = (
+				510D4CBD191B7B81D2C1C90B74DC2B25 /* Button */,
+				9AC07241A104BA7E416110661BAC2DD7 /* LeftIconHeaderView */,
+				E54D48264E3411880BC316B3ADE80AE7 /* Misc */,
+				C402060BE9F6927B2CD9DF015D2EB346 /* Pod */,
+				36138B9A5A53282AF9B775B2A3AE119C /* RightIconHeaderView */,
+				F927779CCB5FCFBA2ABB32115959577C /* Support Files */,
+			);
+			name = TinkoffContest;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		50641DD5676A052D2B42CDE3AE1BEC56 /* Targets Support Files */ = {
@@ -112,33 +127,21 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		510D4CBD191B7B81D2C1C90B74DC2B25 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				592647831D457E13A352033B420825BE /* TCSButton.swift */,
+			);
+			name = Button;
+			path = "Tinkoff-Contest/Sources/Button";
+			sourceTree = "<group>";
+		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
 			isa = PBXGroup;
 			children = (
 				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		5D895A27402ECE7B5F6A18F94E096757 /* Button */ = {
-			isa = PBXGroup;
-			children = (
-				65A69C757FD1BBCCF0A8B969CD0D2FBA /* TCSButton.swift */,
-			);
-			path = Button;
-			sourceTree = "<group>";
-		};
-		823103190C84F0939996AE94A79BB158 /* TinkoffContest */ = {
-			isa = PBXGroup;
-			children = (
-				AD7409D7C8EAD3950CEF4841A00A5EDD /* LeftIconHeaderView */,
-				B127854F63DFC69318540D0B7A2C89ED /* Misc */,
-				132FE7E6F28E3DD0565068C7E11B1DEB /* Pod */,
-				CAB7417A4F7B468DC0E8C6C9AE3B3F43 /* RightIconHeaderView */,
-				F587562265058A4A3EEB14E86E0EA497 /* Support Files */,
-			);
-			name = TinkoffContest;
-			path = ../..;
 			sourceTree = "<group>";
 		};
 		84F104730F640A506ED9D971244012B5 /* Pods-Tinkoff-Contest */ = {
@@ -158,36 +161,23 @@
 			path = "Target Support Files/Pods-Tinkoff-Contest";
 			sourceTree = "<group>";
 		};
-		AD7409D7C8EAD3950CEF4841A00A5EDD /* LeftIconHeaderView */ = {
+		9AC07241A104BA7E416110661BAC2DD7 /* LeftIconHeaderView */ = {
 			isa = PBXGroup;
 			children = (
-				5D895A27402ECE7B5F6A18F94E096757 /* Button */,
-				66C57E3C8D4A8BAB7E186A7949EE729A /* LeftIconHeaderView.swift */,
-				373F1B345A26F495D10190A0F060DF9A /* LeftIconHeaderViewViewModel.swift */,
+				08980E8D28AE10AE278BA45392947709 /* LeftIconHeaderView.swift */,
+				A740D4E21B3947F4399D6A4B9951A8A5 /* LeftIconHeaderViewViewModel.swift */,
 			);
 			name = LeftIconHeaderView;
 			path = "Tinkoff-Contest/Sources/LeftIconHeaderView";
 			sourceTree = "<group>";
 		};
-		B127854F63DFC69318540D0B7A2C89ED /* Misc */ = {
+		C402060BE9F6927B2CD9DF015D2EB346 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				5F979DB6D6B8B3C70F18F79A3B48CC98 /* ConfigurableItem.swift */,
-				79D57EF73D9DB216C0C75A215D90D657 /* UIKitExtensions.swift */,
-				84E9EDEB29F3FA8E00B82D82 /* BackgroundStyle.swift */,
+				F459CF75F78A8DF4ED9F99208EDAC0AB /* README.md */,
+				2AAB3E9EF4C4A88CE37013D926B286A0 /* TinkoffContest.podspec */,
 			);
-			name = Misc;
-			path = "Tinkoff-Contest/Sources/Misc";
-			sourceTree = "<group>";
-		};
-		CAB7417A4F7B468DC0E8C6C9AE3B3F43 /* RightIconHeaderView */ = {
-			isa = PBXGroup;
-			children = (
-				9A1980CD769EE3D1D01408D4E8A6E6C9 /* RightIconHeaderView.swift */,
-				B4B7A1601CC9C8AA2AA88271425EF4BD /* RightIconHeaderViewViewModel.swift */,
-			);
-			name = RightIconHeaderView;
-			path = "Tinkoff-Contest/Sources/RightIconHeaderView";
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -209,45 +199,56 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F587562265058A4A3EEB14E86E0EA497 /* Support Files */ = {
+		E54D48264E3411880BC316B3ADE80AE7 /* Misc */ = {
 			isa = PBXGroup;
 			children = (
-				AFA56393E822E088673920CDE8E0623A /* TinkoffContest.modulemap */,
-				5F992CAC2C98F60F37CA40A5E4AA67E0 /* TinkoffContest-dummy.m */,
-				D287A4E1494FDE7CFF83225AB8CE9385 /* TinkoffContest-Info.plist */,
-				A26E9FCCAD700C005E32364E9BC684E0 /* TinkoffContest-prefix.pch */,
-				0651435FF6D22FFFFCB9456914A14CF1 /* TinkoffContest-umbrella.h */,
-				B58147B206BF476A6D743B8B294997BB /* TinkoffContest.debug.xcconfig */,
-				BAA30FAF4D03C319AD47CCDBB70CF9E0 /* TinkoffContest.release.xcconfig */,
+				4877181F879BC1D45203A5DA26995CF6 /* BackgroundStyle.swift */,
+				A380EDDF8344007A157DEB73FF513EE2 /* ConfigurableItem.swift */,
+				A5B4E375801EC5B5634D1E05A5E5DA07 /* UIKitExtensions.swift */,
 			);
-			name = "Support Files";
-			path = "Sandbox/Pods/Target Support Files/TinkoffContest";
+			name = Misc;
+			path = "Tinkoff-Contest/Sources/Misc";
 			sourceTree = "<group>";
 		};
 		F7EC0487848C2411B6F654C44BF14E4C /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				823103190C84F0939996AE94A79BB158 /* TinkoffContest */,
+				401E05F25BEC45C552C27F5E8AD35C88 /* TinkoffContest */,
 			);
 			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		F927779CCB5FCFBA2ABB32115959577C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				028535D0253CD57B63A53102A612EBC3 /* TinkoffContest.modulemap */,
+				1D28F19410A0B2718204608149907A6E /* TinkoffContest-dummy.m */,
+				DCB3B1967AB3B17305D70803E7B9AF13 /* TinkoffContest-Info.plist */,
+				C12D68BD1DC2E77DD9072E58886845D9 /* TinkoffContest-prefix.pch */,
+				C955F6290A38E6528F5B5D078D3A8575 /* TinkoffContest-umbrella.h */,
+				8A173255AE55033EA37C7A6B8E30AF6C /* TinkoffContest.debug.xcconfig */,
+				177E8804F4C40D1C59A8F40F1D3323AC /* TinkoffContest.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Sandbox/Pods/Target Support Files/TinkoffContest";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		3AAA28838B0C2127E4CE4E53243464BE /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3FB34122D3FF1F8A87E44CD0E37C3E44 /* TinkoffContest-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		4C623DBFFE4CC2FA2DF028D37B2210FA /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				F013C3E567EB72181C7189CBF570FB2C /* Pods-Tinkoff-Contest-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AAC91D18E70BF983DE21A0D12E7DC21 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				605FF73A0B837F2D2DCC45CE6C74D70A /* TinkoffContest-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +267,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				E20530C7B82479F6A9DA433B4E9CDD6D /* PBXTargetDependency */,
+				7D24D3FD00C0AE085F64412E2741DEBB /* PBXTargetDependency */,
 			);
 			name = "Pods-Tinkoff-Contest";
 			productName = Pods_Tinkoff_Contest;
@@ -275,12 +276,12 @@
 		};
 		D09FE18D29B6DB22F7112A2578B76D23 /* TinkoffContest */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5DD4F56A51B28563296C6B409B0C2B9C /* Build configuration list for PBXNativeTarget "TinkoffContest" */;
+			buildConfigurationList = 9B5CD9020975F1256171BDD8293F2506 /* Build configuration list for PBXNativeTarget "TinkoffContest" */;
 			buildPhases = (
-				3AAA28838B0C2127E4CE4E53243464BE /* Headers */,
-				0E69B3A4105DA649004515CA7344E7A5 /* Sources */,
-				8A54B41D94157F24FA663FA042674FA5 /* Frameworks */,
-				033A5DA86D8DAA9440838E26B1610CFF /* Resources */,
+				5AAC91D18E70BF983DE21A0D12E7DC21 /* Headers */,
+				01C79B3F43D9BA0622120A72EFE77C59 /* Sources */,
+				48DF39E948DA14CD4A8B92E43050758D /* Frameworks */,
+				82D411410C9337E6A2BEC0FBC21825FF /* Resources */,
 			);
 			buildRules = (
 			);
@@ -320,7 +321,7 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		033A5DA86D8DAA9440838E26B1610CFF /* Resources */ = {
+		82D411410C9337E6A2BEC0FBC21825FF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -337,19 +338,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0E69B3A4105DA649004515CA7344E7A5 /* Sources */ = {
+		01C79B3F43D9BA0622120A72EFE77C59 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2696FC1B0A0A11C557B2DD91E12EE65 /* ConfigurableItem.swift in Sources */,
-				2FB4668B6F9653891FEE6C51144EDEF3 /* LeftIconHeaderView.swift in Sources */,
-				754C8A5FAD7636A231D2C3883D8DBF52 /* LeftIconHeaderViewViewModel.swift in Sources */,
-				7BCDF5FC782DA91057A86662CF1E648E /* RightIconHeaderView.swift in Sources */,
-				EA8F185811F355C18EB8D6BEF73EF354 /* RightIconHeaderViewViewModel.swift in Sources */,
-				C7990BD710CF2DC253BCC240DDAD89D9 /* TCSButton.swift in Sources */,
-				D2FC18AE41987850C3485F6CE3B6D8EF /* TinkoffContest-dummy.m in Sources */,
-				84E9EDEC29F3FA8E00B82D82 /* BackgroundStyle.swift in Sources */,
-				8D5FBC0605E14D4E8582B45974F58CB6 /* UIKitExtensions.swift in Sources */,
+				936DEF3EDBC63CF4255AE8D807D8CB72 /* BackgroundStyle.swift in Sources */,
+				7A24D744A2E2A74586C7CA9E4EE01D40 /* ConfigurableItem.swift in Sources */,
+				D88BBD461173B8AC3AF1330C3721E001 /* LeftIconHeaderView.swift in Sources */,
+				7092933FB3DE8E6B9A254C2A2D5D6EDB /* LeftIconHeaderViewViewModel.swift in Sources */,
+				760F0EEBA3ADA3CAF17030DEF2CEA247 /* RightIconHeaderView.swift in Sources */,
+				26C94C1A2CC77EE635A1B6CFC19EBC5B /* RightIconHeaderViewViewModel.swift in Sources */,
+				780418CB37D066516DB9A4D044C4264B /* TCSButton.swift in Sources */,
+				32815610E08F2FD1AF87F7AE9A9CFBDB /* TinkoffContest-dummy.m in Sources */,
+				612BEEA3FE277FA8867C65473D2DEBF0 /* UIKitExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,11 +365,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		E20530C7B82479F6A9DA433B4E9CDD6D /* PBXTargetDependency */ = {
+		7D24D3FD00C0AE085F64412E2741DEBB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = TinkoffContest;
 			target = D09FE18D29B6DB22F7112A2578B76D23 /* TinkoffContest */;
-			targetProxy = 8B933A93CF51EC7DB6CF364BC4E97203 /* PBXContainerItemProxy */;
+			targetProxy = 7C38ACF5C17800C4956A14A29336C1B9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -514,9 +515,9 @@
 			};
 			name = Debug;
 		};
-		5FDFFC68489FF9E75B0D9789AA14EA67 /* Release */ = {
+		693DDCD5C1A3ECA8D60D40120A9704BB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BAA30FAF4D03C319AD47CCDBB70CF9E0 /* TinkoffContest.release.xcconfig */;
+			baseConfigurationReference = 177E8804F4C40D1C59A8F40F1D3323AC /* TinkoffContest.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -612,9 +613,9 @@
 			};
 			name = Release;
 		};
-		A3D0799FC842DA1DBD7435CFA13832B2 /* Debug */ = {
+		FC6CFEAD759E70C5B9F1AD13737CA131 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B58147B206BF476A6D743B8B294997BB /* TinkoffContest.debug.xcconfig */;
+			baseConfigurationReference = 8A173255AE55033EA37C7A6B8E30AF6C /* TinkoffContest.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -659,11 +660,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5DD4F56A51B28563296C6B409B0C2B9C /* Build configuration list for PBXNativeTarget "TinkoffContest" */ = {
+		9B5CD9020975F1256171BDD8293F2506 /* Build configuration list for PBXNativeTarget "TinkoffContest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A3D0799FC842DA1DBD7435CFA13832B2 /* Debug */,
-				5FDFFC68489FF9E75B0D9789AA14EA67 /* Release */,
+				FC6CFEAD759E70C5B9F1AD13737CA131 /* Debug */,
+				693DDCD5C1A3ECA8D60D40120A9704BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
