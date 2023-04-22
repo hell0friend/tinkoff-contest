@@ -9,7 +9,7 @@ import UIKit
 
 public final class LeftIconHeaderView: UIView {
 
-    private let cardContentView = UIView().forAutoLayout()
+    private let cardContentView = CardContentView().forAutoLayout()
     private let iconView = UIImageView().forAutoLayout()
     private let titleLabel = UILabel().forAutoLayout()
     private let subtitleLabel = UILabel().forAutoLayout()
@@ -65,19 +65,7 @@ extension LeftIconHeaderView: ConfigurableItem {
             subtitleLabelTrailingAnchorWithoutCloseButton.isActive = true
             titleLabelTrailingAnchorWithCloseButton.isActive = false
             subtitleLabelTrailingAnchorWithCloseButton.isActive = false
-            switch backgroundStyle {
-            case .white:
-                cardContentView.backgroundColor = .white
-                cardContentView.dropShadow(
-                    radius: 34,
-                    color: UIColor(red: 0, green: 0, blue: 0, alpha: 0.12),
-                    opacity: 1,
-                    offsetY: 6
-                )
-            case .grey:
-                cardContentView.backgroundColor = UIColor(red: 246 / 255, green: 247 / 255, blue: 248 / 255, alpha: 1)
-                cardContentView.removeShadow()
-            }
+            cardContentView.configure(with: CardContentView.ViewModel(backgroundStyle: backgroundStyle))
         case let .action(didClose, image):
             closeImage.isHidden = false
             titleLabelTrailingAnchorWithoutCloseButton.isActive = false
@@ -86,13 +74,8 @@ extension LeftIconHeaderView: ConfigurableItem {
             subtitleLabelTrailingAnchorWithCloseButton.isActive = true
             didCloseClosure = didClose
             closeImage.image = image
-            cardContentView.backgroundColor = .white
-            cardContentView.dropShadow(
-                radius: 34,
-                color: UIColor(red: 0, green: 0, blue: 0, alpha: 0.12),
-                opacity: 1,
-                offsetY: 6
-            )
+
+            cardContentView.configure(with: CardContentView.ViewModel(backgroundStyle: .white))
         }
 
         layoutIfNeeded()
@@ -102,7 +85,6 @@ extension LeftIconHeaderView: ConfigurableItem {
 private extension LeftIconHeaderView {
 
     func configureViews() {
-        cardContentView.layer.cornerRadius = 24
         titleLabel.textColor = UIColor(red: 0.2, green: 0.2, blue: 0.2, alpha: 1)
         subtitleLabel.textColor = UIColor(red: 0.573, green: 0.6, blue: 0.635, alpha: 1)
         titleLabel.font = .systemFont(ofSize: 17, weight: .regular)

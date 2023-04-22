@@ -9,7 +9,7 @@ import UIKit
 
 public final class RightIconHeaderView: UIView {
 
-    private let cardContentView = UIView().forAutoLayout()
+    private let cardContentView = CardContentView().forAutoLayout()
     private let labelsStackView = UIStackView().forAutoLayout()
     private let titleLabel = UILabel().forAutoLayout()
     private let subtitleLabel = UILabel().forAutoLayout()
@@ -112,19 +112,7 @@ extension RightIconHeaderView: ConfigurableItem {
             button.isHidden = false
         }
 
-        switch viewModel.backgroundStyle {
-        case .white:
-            cardContentView.backgroundColor = .white
-            cardContentView.dropShadow(
-                radius: 34,
-                color: UIColor(red: 0, green: 0, blue: 0, alpha: 0.12),
-                opacity: 1,
-                offsetY: 6
-            )
-        case .grey:
-            cardContentView.backgroundColor = UIColor(red: 246 / 255, green: 247 / 255, blue: 248 / 255, alpha: 1)
-            cardContentView.removeShadow()
-        }
+        cardContentView.configure(with: CardContentView.ViewModel(backgroundStyle: viewModel.backgroundStyle))
 
         layoutIfNeeded()
     }
@@ -133,7 +121,6 @@ extension RightIconHeaderView: ConfigurableItem {
 private extension RightIconHeaderView {
 
     func configureViews() {
-        cardContentView.layer.cornerRadius = 24
         button.backgroundColor = UIColor(red: 0, green: 0.063, blue: 0.141, alpha: 0.03)
         titleLabel.textColor = UIColor(red: 0.2, green: 0.2, blue: 0.2, alpha: 1)
         subtitleLabel.textColor = UIColor(red: 146 / 255, green: 153 / 255, blue: 162 / 255, alpha: 1)
